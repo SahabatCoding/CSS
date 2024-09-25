@@ -1,0 +1,72 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    font-family: "Poppins", system-ui;
+    font-style: normal;
+}
+
+nav{
+    display: flex;
+    background-color: aquamarine;
+    justify-content: space-around;
+    padding: 15px;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    width: 40%;
+    justify-content: space-evenly;
+}
+
+nav ul li a{
+    text-decoration: none;
+    font-size: 1em;
+}
+
+nav ul li a:hover{
+    text-decoration: underline;
+}
+
+.menu-icon{
+    font-size: 1.5em;
+    display: none;
+}
+
+
+
+
+@media screen and (max-width : 1020px){
+    nav ul{
+        width: 50%;
+    }
+}
+
+@media screen and (max-width : 720px) {
+    nav{
+        flex-wrap: wrap;
+    }
+   
+    nav ul{
+        flex-direction: column;
+        width: 100%;
+        text-align: center;
+    }
+
+    nav ul.hidden{
+        display: none;
+    }
+    
+    nav ul li {
+        padding: 10px;
+    }
+    
+    .menu-icon{
+        display: flex;
+        cursor: pointer;
+    }
+}
+

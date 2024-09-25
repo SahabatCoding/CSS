@@ -1,0 +1,69 @@
+html body{
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-color: blanchedalmond;
+    line-height: 1.65;
+    padding-bottom: 1000px;
+}
+
+.container-utama{
+    background-color: white;
+    max-width:  800px;
+    margin: 40px auto;
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+}
+
+.articel.satu{
+    flex: 4;
+    order: 2;
+}
+
+.articel.dua{
+
+    flex: 1;
+    order: 1;
+}
+
+.articel.tiga{
+    flex: 1;
+    order: 3;
+}
+
+.container-dua{
+    margin: 20px auto;
+    justify-content: space-between;
+}
+
+.layanan{
+    padding: 10px;
+    box-sizing: border-box;
+}
+
+.layanan.satu{
+    background-color: aqua;
+}
+
+.layanan.dua{
+    background-color: blueviolet;
+}
+
+.layanan.tiga{
+    background-color: burlywood;
+}
+
+@media screen and (min-width : 700px) {
+    .container-dua{
+        display: flex;
+        max-width: 800px;
+    }
+
+    .layanan{
+        width: 30%;
+    }
+    
+}
